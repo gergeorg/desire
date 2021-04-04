@@ -14,4 +14,11 @@ $(function () {
         autoplay:true,
         autoplaySpeed:3500,
     });
+
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.category-office'
+        }
+    });
 })
+
