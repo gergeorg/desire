@@ -22,6 +22,15 @@ body {
 .main {
 	flex: 1 0 auto;
 }
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+
 .footer {
 	flex: 0 0 auto;
 }
@@ -99,7 +108,6 @@ body {
   padding: 6px 17px;
   border: 1px solid #dfdfdf;
   border-radius: 20px;
-  // background-color: transparent;
 
   &::placeholder {
     font-family: 'Open Sans', sans-serif;
@@ -110,6 +118,34 @@ body {
 }
 
 
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+
+.play-popup {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(54, 56, 56, 0.4);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-45%);
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/play.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 

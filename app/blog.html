@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desire | Blog</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -65,21 +63,145 @@
 
       <div class="blog">
         <div class="container">
-          <div class="blog__content"></div>
+          <div class="blog__inner">
+            <div class="blog__items">
+              <article class="blog__item">
+                <img class="blog__item-img" src="images/blog/blog-img-3.jpg" alt="images">
 
-          <aside class="sidebar">
-            <form action="https://postman-echo.com/post" class="sidebar__form">
-              <input type="search" class="sidebar__input">
-              <button class="sidebar__search-button">
-                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9579 10.9565L16.7923 15.7909C17.0692 16.0678 17.0692 16.5155 16.7923 16.7924C16.6542 16.9306 16.4729 17 16.2915 17C16.1101 17 15.9288 16.9306 15.7907 16.7924L10.9564 11.9581C9.7997 12.8945 8.32991 13.4583 6.7291 13.4583C3.01889 13.4583 0 10.4394 0 6.72914C0 3.01889 3.01886 0 6.72907 0C10.4393 0 13.4582 3.01893 13.4582 6.72918C13.4582 8.33 12.8944 9.7998 11.9579 10.9565ZM1.41666 6.72914C1.41666 9.65882 3.79946 12.0416 6.7291 12.0416C9.65872 12.0416 12.0415 9.65882 12.0415 6.72914C12.0415 3.79947 9.65875 1.41664 6.7291 1.41664C3.79946 1.41664 1.41666 3.79947 1.41666 6.72914Z" fill="#5A5A5A"/>
-                </svg>
-              </button>
-            </form>
-          </aside>
+                <div class="blog__item-info">
+                  <span class="blog__item-date">August 15, 2020</span> |
+                  <a class="blog__item-author" href="#">by Ann Summers</a> |
+                  <a class="blog__item-theme" href="#">Bedroom Furniture</a>
+                </div>
+
+                <h3 class="blog__item-title"><a class="blog__item-link" href="#">Red selfies edison bulb four dollar toast humblebrag for the furniture</a></h3>
+                <p class="blog__item-text">Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table</p>
+              </article>
+
+              <blockquote class="blog__blockquote">
+                “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+                <div class="blog__blockquote-author">Paul Rand</div>
+              </blockquote>
+
+              <article class="blog__item article-video">
+                <div class="article-video__box">
+                  <img class="blog__item-img" src="images/blog/blog-img-4.jpg" alt="images">
+                  <a class="article-video__play play-popup" data-fancybox href="https://youtu.be/BegMnWXYmHs"></a>
+                </div>
+
+                <div class="blog__item-info">
+                  <span class="blog__item-date">August 12, 2020</span> |
+                  <a class="blog__item-author" href="#">by Lux Morningstar</a> |
+                  <a class="blog__item-theme" href="#">Design</a>
+                </div>
+
+                <h3 class="blog__item-title"><a class="blog__item-link" href="#">Authentic kogi shabby chic</a></h3>
+              </article>
+
+              <article class="blog__item article-slider">
+                <div class="article-slider__box">
+                  <img class="article-slider-img" src="images/blog/blog-img-1.jpg" alt="slider-image">
+                  <img class="article-slider-img" src="images/blog/blog-img-4.jpg" alt="slider-image">
+                  <img class="article-slider-img" src="images/blog/blog-img-3.jpg" alt="slider-image">
+                </div>
+
+                <div class="blog__item-info">
+                  <span class="blog__item-date">August 18, 2020</span> |
+                  <a class="blog__item-author" href="#">by Ann Summers</a> |
+                  <a class="blog__item-theme" href="#">Table Furniture</a>
+                </div>
+
+                <h3 class="blog__item-title"><a class="blog__item-link" href="#">Semiotics fixie four dollar toast, next level woke</a></h3>
+                <p class="blog__item-text">Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table</p>
+              </article>
+
+              <div class="pagination">
+                <a class="pagination__arrow pagination__arrow-disabled" href="#">
+                  <svg width="6" height="12" viewbox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.126589 6.3293L5.26514 11.8643C5.4335 12.0455 5.70608 12.0452 5.87415 11.8634C6.0421 11.6815 6.04167 11.3869 5.87329 11.2055L1.0406 5.99998L5.87346 0.794435C6.04182 0.613029 6.04225 0.318631 5.87433 0.136757C5.79007 0.0455856 5.67969 0 5.56931 0C5.45921 0 5.34927 0.0452805 5.26516 0.135819L0.126589 5.67068C0.0455022 5.75782 0 5.87642 0 5.99998C0 6.12354 0.0456324 6.24199 0.126589 6.3293Z" fill="black"/>
+                  </svg>
+                </a>
+
+                <ul class="pagination__list">
+                  <li class="pagination__item"><a class="pagination__num pagination__num-active" href="#">1</a></li>
+                  <li class="pagination__item"><a class="pagination__num" href="#">2</a></li>
+                </ul>
+
+                  <a class="pagination__arrow" href="#">
+                    <svg width="6" height="12" viewbox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.87341 5.6707L0.734858 0.1357C0.5665 -0.0455414 0.293923 -0.0452368 0.125846 0.136638C-0.0421 0.318488 -0.0416661 0.613073 0.126714 0.794455L4.9594 6.00002L0.126541 11.2056C-0.041818 11.387 -0.0422519 11.6814 0.125673 11.8632C0.209928 11.9544 0.320308 12 0.430689 12C0.540787 12 0.650733 11.9547 0.734837 11.8642L5.87341 6.32932C5.9545 6.24218 6 6.12358 6 6.00002C6 5.87646 5.95437 5.75801 5.87341 5.6707Z" fill="black"/>
+                    </svg>
+                  </a>
+              </div>
+            </div>
+
+            <aside class="sidebar">
+              <form action="https://postman-echo.com/post" class="sidebar__form">
+                <input type="search" class="sidebar__input" placeholder="Search">
+                <button class="sidebar__search-button btn">
+                  <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9579 10.9565L16.7923 15.7909C17.0692 16.0678 17.0692 16.5155 16.7923 16.7924C16.6542 16.9306 16.4729 17 16.2915 17C16.1101 17 15.9288 16.9306 15.7907 16.7924L10.9564 11.9581C9.7997 12.8945 8.32991 13.4583 6.7291 13.4583C3.01889 13.4583 0 10.4394 0 6.72914C0 3.01889 3.01886 0 6.72907 0C10.4393 0 13.4582 3.01893 13.4582 6.72918C13.4582 8.33 12.8944 9.7998 11.9579 10.9565ZM1.41666 6.72914C1.41666 9.65882 3.79946 12.0416 6.7291 12.0416C9.65872 12.0416 12.0415 9.65882 12.0415 6.72914C12.0415 3.79947 9.65875 1.41664 6.7291 1.41664C3.79946 1.41664 1.41666 3.79947 1.41666 6.72914Z" fill="#5A5A5A"/>
+                  </svg>
+                </button>
+              </form>
+
+              <div class="blog__category">
+                <h6 class="blog__category-title blog__sidebar-title">Categories</h6>
+
+                <ul class="blog__category-list">
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Dining room <span class="blog__category-counter">(1)</span></a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Office furniture <span class="blog__category-counter">(12)</span></a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Simple interiror design <span class="blog__category-counter">(2)</span></a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Design <span class="blog__category-counter">(4)</span></a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Bedroom Furniture <span class="blog__category-counter">(1)</span></a></li>
+                </ul>
+              </div>
+
+              <div class="resent-posts">
+                <h6 class="resent-posts__title blog__sidebar-title">Recent Posts</h6>
+
+                <ul class="resent-posts__list">
+                  <li class="resent-posts__item">
+                    <a class="resent-posts__link" href="#">Cred selfies edison bulb four dollar toast humblebrag</a>
+                    <span class="resent-posts__date">August 10, 2020</span> |
+                    <a class="resent-posts__author" href="#">by Ann Summers</a>
+                  </li>
+
+                  <li class="resent-posts__item">
+                    <a class="resent-posts__link" href="#">Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth</a>
+                    <span class="resent-posts__date">September 30 ,2020</span> |
+                    <a class="resent-posts__author" href="#">by Ann Summers</a>
+                  </li>
+
+                  <li class="resent-posts__item">
+                    <a class="resent-posts__link" href="#">Cred selfies edison bulb four dollar toast humblebrag</a>
+                    <span class="resent-posts__date">May 2, 2020</span> |
+                    <a class="resent-posts__author" href="#">by Ann Summers</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="blog__tags">
+                <h6 class="blog__tags-title blog__sidebar-title">Tags</h6>
+
+                <a class="blog__tags-link" href="#">Dining room futniture</a>
+                <a class="blog__tags-link" href="#">Chair</a>
+                <a class="blog__tags-link" href="#">Table</a>
+                <a class="blog__tags-link" href="#">Bedroom</a>
+                <a class="blog__tags-link" href="#">Office Furniture</a>
+              </div>
+
+              <ul class="blog__social-list">
+                <li class="blog__social-item"><a class="blog__social-link footer__social-link--facebook" href="#" aria-label="our page in Facebook"></a></li>
+                <li class="blog__social-item"><a class="blog__social-link footer__social-link--instagram" href="#" aria-label="our page in Instagram"></a></li>
+                <li class="blog__social-item"><a class="blog__social-link footer__social-link--pinterest" href="#" aria-label="our page in Pinterest"></a></li>
+                <li class="blog__social-item"><a class="blog__social-link footer__social-link--whatsapp" href="#" aria-label="our page in WhatsApp"></a></li>
+                <li class="blog__social-item"><a class="blog__social-link footer__social-link--youtube" href="#" aria-label="our page in Youtube"></a></li>
+              </ul>
+            </aside>
+          </div>
         </div>
       </div>
-
     </main>
 
     <footer class="footer">
