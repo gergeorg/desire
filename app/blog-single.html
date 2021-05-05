@@ -26,7 +26,7 @@
 
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item"><a class="menu__list-link menu__list-link--active">Blog</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="blog.html">Blog</a></li>
               <li class="menu__list-item"><a class="menu__list-link" href="contacts.html">Contact</a></li>
             </ul>
           </nav>
@@ -61,16 +61,83 @@
         </div>
       </div>
 
-      <div class="blog">
+      <div class="blog blog-single">
         <div class="container">
           <div class="blog__inner">
             <div class="blog__items">
+              <article class="blog__item blog-single__item">
+                <img class="blog__item-img" src="images/blog/blog-img-3.jpg" alt="images">
 
+                <div class="blog__item-info">
+                  <span class="blog__item-date">August 15, 2020</span> |
+                  <a class="blog__item-author" href="#">by Ann Summers</a> |
+                  <a class="blog__item-theme" href="#">Bedroom Furniture</a>
+                </div>
+
+                <h3 class="blog__item-title"><a class="blog__item-link" href="#">Red selfies edison bulb four dollar toast humblebrag for the furniture</a></h3>
+
+                <div class="blog-single__text">
+                  <p>Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+                    Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.</p>
+
+                  <blockquote>
+                    “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+                    <div class="blog__blockquote-author">Paul Rand</div>
+                  </blockquote>
+
+                  <p>Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table. Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.</p>
+                </div>
+
+                <div class="blog-single__tags">
+                  <h6 class="blog-single__tags-title">Tags</h6>
+
+                  <a class="blog-single__tags-link" href="#">Bedroom furniture</a>
+                  <a class="blog-single__tags-link" href="#">Office Furniture</a>
+                  <a class="blog-single__tags-link" href="#">Dining room futniture</a>
+                  <a class="blog-single__tags-link" href="#">Chair</a>
+                </div>
+
+                <div class="blog-single__nav">
+                  <a class="blog-single__nav-link link-prev" href="#">Cred selfies edison bulb four dollar toast humblebrag</a>
+
+                  <a class="blog-single__nav-link link-next" href="#">Semiotics fixie four dollar toast, next level</a>
+                </div>
+              </article>
+
+              <div class="comments">
+                <h6 class="comments__title">Comments:</h6>
+
+                <div class="comments__item">
+                  <img class="comments__item-avatar" src="images/comments/avatar-1.jpg" alt="user avatar">
+
+                  <div class="comments__item__info">
+                    <span class="comments__item-name">Lea Brown</span>
+                    <span class="comments__item-date">August 12, 2020</span>
+                    <span class="comments__item-text">Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche</span>
+                  </div>
+
+                  <button class="comments__item-btn btn">Reply</button>
+                </div>
+              </div>
+
+              <form class="add-comments" action="#">
+                <h6 class="add-comments__title">Post a Comment</h6>
+
+                <textarea class="add-comments__textarea" name="user_comment" placeholder="Your comment"></textarea>
+                <input class="add-comments__input" type="text" name="user_name" placeholder="Your name">
+                <input class="add-comments__input" type="email" name="user_email" placeholder="Your e-mail">
+                <label class="add-comments__label">
+                  <input class="add-comments__checkbox" type="checkbox" name="remember_me">
+                  <span class="add-comments__checkbox-text">Remember me</span>
+                </label>
+                <button class="add-comments__btn btn form-button" type="submit">Submit</button>
+              </form>
             </div>
 
               <aside class="sidebar">
                 <form action="https://postman-echo.com/post" class="sidebar__form">
                   <input type="search" class="sidebar__input" placeholder="Search">
+
                   <button class="sidebar__search-button btn">
                     <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9579 10.9565L16.7923 15.7909C17.0692 16.0678 17.0692 16.5155 16.7923 16.7924C16.6542 16.9306 16.4729 17 16.2915 17C16.1101 17 15.9288 16.9306 15.7907 16.7924L10.9564 11.9581C9.7997 12.8945 8.32991 13.4583 6.7291 13.4583C3.01889 13.4583 0 10.4394 0 6.72914C0 3.01889 3.01886 0 6.72907 0C10.4393 0 13.4582 3.01893 13.4582 6.72918C13.4582 8.33 12.8944 9.7998 11.9579 10.9565ZM1.41666 6.72914C1.41666 9.65882 3.79946 12.0416 6.7291 12.0416C9.65872 12.0416 12.0415 9.65882 12.0415 6.72914C12.0415 3.79947 9.65875 1.41664 6.7291 1.41664C3.79946 1.41664 1.41666 3.79947 1.41666 6.72914Z" fill="#5A5A5A"/>
@@ -135,7 +202,6 @@
           </div>
         </div>
       </div>
-
     </main>
 
     <footer class="footer">
